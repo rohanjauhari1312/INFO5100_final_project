@@ -244,11 +244,11 @@ public class ComplianceOfficer extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.removeRow(selectedRowIndex);
         JOptionPane.showMessageDialog(this, "Policy removed.");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNameActionPerformed
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
