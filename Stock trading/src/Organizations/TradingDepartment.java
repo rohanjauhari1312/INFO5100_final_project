@@ -15,7 +15,7 @@ import ui.Roles.RoleDirectory;
 
 /**
  *
- * @author rohanjauhari
+ * @author tejasvenkatesh
  */
 public class TradingDepartment extends javax.swing.JPanel {
 

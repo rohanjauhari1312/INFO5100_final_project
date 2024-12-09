@@ -15,7 +15,7 @@ import ui.Roles.RoleDirectory;
 
 /**
  *
- * @author rohanjauhari
+ * @author tejasvenkatesh
  */
 public class RiskManagementTeam extends javax.swing.JPanel {
 

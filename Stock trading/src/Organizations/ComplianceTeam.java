@@ -15,7 +15,7 @@ import ui.Roles.RoleDirectory;
 
 /**
  *
- * @author rohanjauhari
+ * @author tejasvenkatesh
  */
 public class ComplianceTeam extends javax.swing.JPanel {
 

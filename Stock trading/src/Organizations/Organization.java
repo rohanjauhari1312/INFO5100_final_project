@@ -8,7 +8,7 @@ import model.Person;
 
 /**
  *
- * @author rohanjauhari
+ * @author tejasvenkatesh
  */
 public class Organization {
     String name,username, password, role;
