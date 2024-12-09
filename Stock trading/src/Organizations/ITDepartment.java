@@ -254,14 +254,13 @@ public class ITDepartment extends javax.swing.JPanel {
         }
         else
         JOptionPane.showMessageDialog(this, "Username exists");
-    }//GEN-LAST:event_btnCreateActionPerformed
+    }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
         userProcessContainer.remove(this) ;
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout. previous (userProcessContainer);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
     private void RoleNamesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RoleNamesActionPerformed
         // TODO add your handling code here:
