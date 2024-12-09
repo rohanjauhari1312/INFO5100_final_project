@@ -4,7 +4,7 @@ To run the project successfully, you need to include JAR files.
 
 These files are uploaded on github in Libraries.zip folder. Unzip it.
 
-  1. Open the project in NetBeans.
+  	1. Open the project in NetBeans.
 	2.	Right-click the project in the Projects window and select Properties.
 	3.	Go to the Libraries section.
 	4.	Click Add JAR/Folder.
