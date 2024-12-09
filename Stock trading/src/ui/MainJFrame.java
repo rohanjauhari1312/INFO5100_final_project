@@ -97,11 +97,14 @@ public class MainJFrame extends javax.swing.JFrame {
         setTitle("Dr. Trade");
         setBackground(new java.awt.Color(240, 240, 240));
 
+        splitPane.setBackground(new java.awt.Color(153, 153, 255));
         splitPane.setDividerLocation(150);
         splitPane.setOpaque(false);
 
-        controlPanel.setBackground(new java.awt.Color(240, 240, 240));
+        controlPanel.setBackground(new java.awt.Color(153, 153, 255));
 
+        btnAdmin.setBackground(new java.awt.Color(204, 204, 255));
+        btnAdmin.setFont(new java.awt.Font("Optima", 1, 12)); // NOI18N
         btnAdmin.setText("System Administrator");
         btnAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +112,8 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        btnUsers.setBackground(new java.awt.Color(204, 204, 255));
+        btnUsers.setFont(new java.awt.Font("Optima", 1, 12)); // NOI18N
         btnUsers.setText("Traders");
         btnUsers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +121,8 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        btnEnterprise.setBackground(new java.awt.Color(204, 204, 255));
+        btnEnterprise.setFont(new java.awt.Font("Optima", 1, 12)); // NOI18N
         btnEnterprise.setText("Enterprise Admin");
         btnEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,6 +130,8 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        btnOrgAdmin.setBackground(new java.awt.Color(204, 204, 255));
+        btnOrgAdmin.setFont(new java.awt.Font("Optima", 1, 12)); // NOI18N
         btnOrgAdmin.setText("Organization Admin");
         btnOrgAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +139,8 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        btnSystemRoles.setBackground(new java.awt.Color(204, 204, 255));
+        btnSystemRoles.setFont(new java.awt.Font("Optima", 1, 12)); // NOI18N
         btnSystemRoles.setText("System Roles");
         btnSystemRoles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,6 +148,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Optima", 1, 14)); // NOI18N
         jLabel1.setText("Who you are?");
 
         javax.swing.GroupLayout controlPanelLayout = new javax.swing.GroupLayout(controlPanel);
@@ -146,38 +158,37 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(controlPanelLayout.createSequentialGroup()
                 .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(controlPanelLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(15, 15, 15)
+                        .addGroup(controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(btnAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnEnterprise)
                             .addComponent(btnOrgAdmin)
-                            .addComponent(btnAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnSystemRoles)
+                            .addComponent(btnUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(controlPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(controlPanelLayout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(btnSystemRoles))
-                    .addGroup(controlPanelLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
+                        .addGap(40, 40, 40)
                         .addComponent(jLabel1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(15, 15, 15))
         );
+
+        controlPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAdmin, btnEnterprise, btnOrgAdmin, btnSystemRoles, btnUsers});
+
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(controlPanelLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jLabel1)
-                .addGap(67, 67, 67)
+                .addGap(75, 75, 75)
                 .addComponent(btnAdmin)
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(btnEnterprise)
-                .addGap(30, 30, 30)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(btnOrgAdmin)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(btnSystemRoles)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(btnUsers)
-                .addContainerGap(528, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         splitPane.setLeftComponent(controlPanel);

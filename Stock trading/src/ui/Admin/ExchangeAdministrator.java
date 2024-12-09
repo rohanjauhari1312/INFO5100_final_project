@@ -66,6 +66,10 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
         tblRequests = new javax.swing.JTable();
         btnResolve = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(204, 204, 255));
+
+        jLabel1.setFont(new java.awt.Font("Optima", 3, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 255));
         jLabel1.setText("Welcome Exchange Administrator");
 
         jTextField1.setEditable(false);
@@ -75,13 +79,17 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setText("<<< Back");
+        btnBack.setBackground(new java.awt.Color(51, 51, 51));
+        btnBack.setForeground(new java.awt.Color(204, 204, 204));
+        btnBack.setText("<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
 
+        btnNYSE.setBackground(new java.awt.Color(204, 204, 204));
+        btnNYSE.setFont(new java.awt.Font("Optima", 1, 14)); // NOI18N
         btnNYSE.setText("Establish Connection with NYSE");
         btnNYSE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,6 +97,8 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
             }
         });
 
+        btnNasdaq.setBackground(new java.awt.Color(204, 204, 204));
+        btnNasdaq.setFont(new java.awt.Font("Optima", 1, 14)); // NOI18N
         btnNasdaq.setText("Establish Connection with Nasdaq");
         btnNasdaq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,6 +106,7 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Optima", 3, 12)); // NOI18N
         jLabel2.setText("Here are connection requests for you!");
 
         tblRequests.setModel(new javax.swing.table.DefaultTableModel(
@@ -111,6 +122,8 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblRequests);
 
+        btnResolve.setBackground(new java.awt.Color(204, 204, 204));
+        btnResolve.setFont(new java.awt.Font("Optima", 1, 14)); // NOI18N
         btnResolve.setText("Resolve");
         btnResolve.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,48 +136,56 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBack)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addComponent(jLabel1)
-                        .addGap(33, 33, 33)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 100, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(btnBack)
+                        .addGap(0, 0, 0))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(259, 259, 259)
+                        .addContainerGap(100, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnNasdaq)
-                            .addComponent(btnNYSE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(229, 229, 229)
-                                .addComponent(btnResolve)))))
-                .addContainerGap(200, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(154, 154, 154)
+                                        .addComponent(jLabel1)
+                                        .addGap(30, 30, 30)
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel2)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnNasdaq)
+                                        .addGap(120, 120, 120)
+                                        .addComponent(btnNYSE)))
+                                .addGap(0, 0, 0))
+                            .addComponent(btnResolve, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addContainerGap(165, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))))
+                .addGap(169, 169, 169)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(118, 118, 118)
-                .addComponent(btnNYSE)
-                .addGap(40, 40, 40)
-                .addComponent(btnNasdaq)
-                .addGap(31, 31, 31)
+                    .addComponent(btnNasdaq)
+                    .addComponent(btnNYSE))
+                .addGap(35, 35, 35)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(30, 30, 30)
                 .addComponent(btnResolve)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -200,6 +221,7 @@ public class ExchangeAdministrator extends javax.swing.JPanel {
             return;
         }
         DefaultTableModel model = (DefaultTableModel) tblRequests.getModel();
+        admin.messageToEA.remove((Person)model.getValueAt(selectedRowIndex, 0));
         model.removeRow(selectedRowIndex);
         JOptionPane.showMessageDialog(this, "Query resolved.");
     }//GEN-LAST:event_btnResolveActionPerformed
