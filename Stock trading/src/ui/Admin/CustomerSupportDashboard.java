@@ -14,7 +14,7 @@ import model.Person;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class CustomerSupportDashboard extends javax.swing.JPanel {
 
@@ -155,7 +155,7 @@ public class CustomerSupportDashboard extends javax.swing.JPanel {
     }//GEN-LAST:event_btnBackActionPerformed
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify
     private javax.swing.JButton btnBack;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
