@@ -10,7 +10,7 @@ import model.Person;
 import ui.Admin.Admin;
 /**
  *
- * @author kal bugrara
+ * @author hardishah
  */
 public class RoleDirectory {
     

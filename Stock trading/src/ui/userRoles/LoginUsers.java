@@ -17,7 +17,7 @@ import ui.Admin.Admin;
 import ui.Admin.PasswordDirectory;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class LoginUsers extends javax.swing.JPanel {
 

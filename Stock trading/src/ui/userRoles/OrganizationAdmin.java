@@ -23,7 +23,7 @@ import ui.Admin.Admin;
 import ui.Roles.RoleDirectory;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class OrganizationAdmin extends javax.swing.JPanel {
 

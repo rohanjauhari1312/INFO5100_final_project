@@ -32,7 +32,7 @@ import ui.Admin.Admin;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class FinancialAdvisor extends javax.swing.JPanel {
 

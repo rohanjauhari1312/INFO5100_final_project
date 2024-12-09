@@ -18,7 +18,7 @@ import ui.Admin.Admin;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class UserProfile extends javax.swing.JPanel {
 

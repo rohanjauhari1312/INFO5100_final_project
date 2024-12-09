@@ -13,7 +13,7 @@ import ui.Admin.Admin;
 import ui.Admin.PasswordDirectory;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class LoginCustomerSupport extends javax.swing.JPanel {
 

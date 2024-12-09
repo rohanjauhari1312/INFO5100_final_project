@@ -6,7 +6,7 @@ package ui.Roles;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class Role {
     String name,username, password, role;

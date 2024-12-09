@@ -22,7 +22,7 @@ import javax.mail.PasswordAuthentication;  // Make sure this is the correct impo
 import model.Person;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class UserSignUp extends javax.swing.JPanel {
 

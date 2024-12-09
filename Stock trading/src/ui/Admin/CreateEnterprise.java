@@ -13,7 +13,7 @@ import model.Person;
 import ui.Admin.Admin;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class CreateEnterprise extends javax.swing.JPanel {
 

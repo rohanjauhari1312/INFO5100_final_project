@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 import model.Person;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class StockExchange extends javax.swing.JPanel {
 

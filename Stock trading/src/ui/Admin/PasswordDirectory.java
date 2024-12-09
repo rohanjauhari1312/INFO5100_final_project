@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class PasswordDirectory {
     protected HashMap<String, String> passwords;

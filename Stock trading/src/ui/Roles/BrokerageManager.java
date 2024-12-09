@@ -19,7 +19,7 @@ import ui.Admin.Admin;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class BrokerageManager extends javax.swing.JPanel {
 

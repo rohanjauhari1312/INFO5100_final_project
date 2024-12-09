@@ -21,7 +21,7 @@ import ui.Admin.Admin;
 import ui.Admin.StockExchange;
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class EnterpriseAdmin extends javax.swing.JPanel {
 

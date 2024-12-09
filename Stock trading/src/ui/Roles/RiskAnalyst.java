@@ -27,7 +27,7 @@ import ui.userRoles.UserDashboard;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class RiskAnalyst extends javax.swing.JPanel {
 
