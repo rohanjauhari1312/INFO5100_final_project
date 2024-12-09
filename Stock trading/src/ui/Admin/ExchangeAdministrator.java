@@ -27,7 +27,7 @@ import ui.Admin.Admin;
 
 /**
  *
- * @author rohanjauhari
+ * @author hardishah
  */
 public class ExchangeAdministrator extends javax.swing.JPanel {
 
